@@ -5,4 +5,3 @@ openfda:
     timeout: 10
     key: ${OPENFDA_API_KEY:}
 
-

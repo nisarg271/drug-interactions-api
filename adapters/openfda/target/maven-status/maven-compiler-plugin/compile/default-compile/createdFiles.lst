@@ -1,0 +1,10 @@
+com\example\druginteractions\adapter\openfda\model\OpenFdaResponse.class
+com\example\druginteractions\adapter\openfda\config\WebClientConfig.class
+com\example\druginteractions\adapter\openfda\OpenFdaRateLimitException.class
+com\example\druginteractions\adapter\openfda\OpenFdaAdapter.class
+com\example\druginteractions\adapter\openfda\OpenFdaResponse$Result.class
+com\example\druginteractions\adapter\openfda\config\OpenFdaConfig.class
+com\example\druginteractions\adapter\openfda\model\OpenFdaResponse$Result.class
+com\example\druginteractions\adapter\openfda\model\OpenFdaResponse$Meta.class
+com\example\druginteractions\adapter\openfda\OpenFdaException.class
+com\example\druginteractions\adapter\openfda\OpenFdaResponse.class

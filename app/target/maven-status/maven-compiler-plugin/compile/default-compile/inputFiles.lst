@@ -1,0 +1,7 @@
+C:\Users\Admin\drug-interactions-api\app\src\main\java\com\example\druginteractions\DrugInteractionsApplication.java
+C:\Users\Admin\drug-interactions-api\app\src\main\java\com\example\druginteractions\web\DrugInteractionController.java
+C:\Users\Admin\drug-interactions-api\app\src\main\java\com\example\druginteractions\web\dto\DrugInteractionRequest.java
+C:\Users\Admin\drug-interactions-api\app\src\main\java\com\example\druginteractions\web\dto\DrugInteractionResponse.java
+C:\Users\Admin\drug-interactions-api\app\src\main\java\com\example\druginteractions\web\dto\DrugSignalResponse.java
+C:\Users\Admin\drug-interactions-api\app\src\main\java\com\example\druginteractions\web\error\GlobalExceptionHandler.java
+C:\Users\Admin\drug-interactions-api\app\src\main\java\com\example\druginteractions\web\mapper\DrugInteractionMapper.java

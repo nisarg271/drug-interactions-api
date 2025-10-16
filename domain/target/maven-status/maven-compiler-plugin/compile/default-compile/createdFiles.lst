@@ -1,0 +1,14 @@
+com\example\druginteractions\domain\model\DrugInteraction.class
+com\example\druginteractions\domain\port\InteractionRepository.class
+com\example\druginteractions\domain\model\DrugInteraction$DrugInteractionBuilder.class
+com\example\druginteractions\domain\port\OpenFdaClient.class
+com\example\druginteractions\domain\model\DrugSignalResponse$DrugSignalResponseBuilder.class
+com\example\druginteractions\domain\model\DrugSignalResponse$Reaction.class
+com\example\druginteractions\domain\model\DrugSignalResponse$Reaction$ReactionBuilder.class
+com\example\druginteractions\domain\model\DrugPair.class
+com\example\druginteractions\domain\service\InteractionService.class
+com\example\druginteractions\domain\port\DrugInteractionRepository.class
+com\example\druginteractions\domain\model\OpenFdaSignal.class
+com\example\druginteractions\domain\service\DrugInteractionService.class
+com\example\druginteractions\domain\model\DrugSignalResponse.class
+com\example\druginteractions\domain\model\InteractionNote.class

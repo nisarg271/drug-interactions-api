@@ -1,0 +1,10 @@
+com\example\druginteractions\web\error\GlobalExceptionHandler$ErrorResponse.class
+com\example\druginteractions\web\error\GlobalExceptionHandler.class
+com\example\druginteractions\web\dto\DrugSignalResponse$ReactionCount.class
+com\example\druginteractions\web\dto\DrugInteractionResponse.class
+com\example\druginteractions\web\dto\DrugSignalResponse.class
+com\example\druginteractions\web\DrugInteractionController.class
+com\example\druginteractions\web\error\GlobalExceptionHandler$ErrorDetail.class
+com\example\druginteractions\web\mapper\DrugInteractionMapper.class
+com\example\druginteractions\DrugInteractionsApplication.class
+com\example\druginteractions\web\dto\DrugInteractionRequest.class

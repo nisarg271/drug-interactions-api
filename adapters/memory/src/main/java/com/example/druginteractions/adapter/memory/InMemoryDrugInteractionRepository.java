@@ -14,7 +14,7 @@ public class InMemoryDrugInteractionRepository implements DrugInteractionReposit
 
     @Override
     public DrugInteraction save(DrugInteraction interaction) {
-        String key = createKey(interaction.getDrugA(), interaction.getDrugB());
+        String key = createKey(interaction.drugA, interaction.drugB);
         interactions.put(key, interaction);
         return interaction;
     }

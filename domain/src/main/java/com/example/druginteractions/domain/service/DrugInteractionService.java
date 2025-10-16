@@ -1,11 +1,13 @@
 package com.example.druginteractions.domain.service;
 
 import com.example.druginteractions.domain.model.DrugInteraction;
-import com.example.druginteractions.domain.model.DrugSignalResponse;
+import com.example.druginteractions.domain.model.OpenFdaSignal;
 import com.example.druginteractions.domain.port.DrugInteractionRepository;
 import com.example.druginteractions.domain.port.OpenFdaClient;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Mono;
 
 import java.util.Optional;
 
@@ -23,7 +25,7 @@ public class DrugInteractionService {
         return repository.findByDrugs(drugA, drugB);
     }
 
-    public DrugSignalResponse getSignals(String drugA, String drugB, int limit) {
-        return openFdaClient.getSignals(drugA, drugB, limit);
+    public Mono<OpenFdaSignal> getSignals(String drugA, String drugB, int limit) {
+        return openFdaClient.fetchSignals(drugA, drugB, limit);
     }
 }
