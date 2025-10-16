@@ -1,0 +1,10 @@
+C:\Users\Admin\drug-interactions-api\domain\src\main\java\com\example\druginteractions\domain\model\DrugInteraction.java
+C:\Users\Admin\drug-interactions-api\domain\src\main\java\com\example\druginteractions\domain\model\DrugPair.java
+C:\Users\Admin\drug-interactions-api\domain\src\main\java\com\example\druginteractions\domain\model\DrugSignalResponse.java
+C:\Users\Admin\drug-interactions-api\domain\src\main\java\com\example\druginteractions\domain\model\InteractionNote.java
+C:\Users\Admin\drug-interactions-api\domain\src\main\java\com\example\druginteractions\domain\model\OpenFdaSignal.java
+C:\Users\Admin\drug-interactions-api\domain\src\main\java\com\example\druginteractions\domain\port\DrugInteractionRepository.java
+C:\Users\Admin\drug-interactions-api\domain\src\main\java\com\example\druginteractions\domain\port\InteractionRepository.java
+C:\Users\Admin\drug-interactions-api\domain\src\main\java\com\example\druginteractions\domain\port\OpenFdaClient.java
+C:\Users\Admin\drug-interactions-api\domain\src\main\java\com\example\druginteractions\domain\service\DrugInteractionService.java
+C:\Users\Admin\drug-interactions-api\domain\src\main\java\com\example\druginteractions\domain\service\InteractionService.java
