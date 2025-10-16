@@ -1,0 +1,7 @@
+# OpenFDA API Configuration
+openfda:
+  api:
+    baseUrl: https://api.fda.gov
+    timeout: 10
+    key: ${OPENFDA_API_KEY:}
+

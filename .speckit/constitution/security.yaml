@@ -1,0 +1,75 @@
+security:
+  headers:
+    content-security-policy: "default-src 'self'; frame-ancestors 'none'"
+    strict-transport-security: "max-age=31536000; includeSubDomains"
+    x-content-type-options: "nosniff"
+    x-frame-options: "DENY"
+    x-xss-protection: "1; mode=block"
+    referrer-policy: "strict-origin-when-cross-origin"
+    permissions-policy: "geolocation=(), microphone=()"
+
+  csrf:
+    enabled: true
+    cookieName: "XSRF-TOKEN"
+    headerName: "X-XSRF-TOKEN"
+test {
+  ratelimit:
+    enabled: true
+    defaultLimit: 100
+    duration: "1m"
+
+validation:
+  sanitization:
+    html: true
+    sql: true
+    xss: true
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport
+}
+
+jacoco {
+    toolVersion = "0.8.11"
+    reportsDirectory = layout.buildDirectory.dir('reports/jacoco')
+}
+
+jacocoTestReport {
+    reports {
+        xml.required = true
+        html.required = true
+    }
+
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: [
+                "**/config/**",
+                "**/model/**",
+                "**/dto/**",
+                "**/entity/**"
+            ])
+        }))
+    }
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            element = 'CLASS'
+            limit {
+                counter = 'LINE'
+                value = 'COVEREDRATIO'
+                minimum = 0.80
+            }
+            limit {
+                counter = 'BRANCH'
+                value = 'COVEREDRATIO'
+                minimum = 0.80
+            }
+            excludes = [
+                '*.config.*',
+                '*.model.*',
+                '*.dto.*',
+                '*.entity.*'
+            ]
+        }
+    }
+}

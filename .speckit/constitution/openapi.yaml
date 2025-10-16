@@ -1,0 +1,58 @@
+openapi: 3.0.3
+components:
+  parameters:
+    accessibility:
+      description: |
+        All endpoints must include:
+        - ARIA labels in response schemas
+        - Screen reader considerations
+        - Keyboard navigation support
+        - Clear error messages
+        - Role and state information
+
+  schemas:
+    ErrorResponse:
+      type: object
+      required:
+        - code
+        - message
+        - details
+      properties:
+        code:
+          type: string
+          description: Machine-readable error code
+          example: "VALIDATION_ERROR"
+        message:
+          type: string
+          description: Human-readable error message suitable for screen readers
+          example: "The request contains invalid data"
+        details:
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                type: string
+              message:
+                type: string
+              ariaLabel:
+                type: string
+                description: Screen reader friendly description
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+
+x-specifications:
+  validation:
+    - All DTOs must use Bean Validation annotations
+    - Custom validation messages must be screen reader friendly
+    - Error responses must include ARIA labels
+
+  documentation:
+    - All endpoints must have complete OpenAPI documentation
+    - Response examples must be provided
+    - Error scenarios must be documented
+    - Accessibility considerations must be noted
+
